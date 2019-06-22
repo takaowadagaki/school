@@ -109,7 +109,11 @@ h2{
 /* 本文 */
 #page .pageBody{
     text-align: center;
+    width: 1000px;
+    margin:0 auto;
 }
+
+
 #page .pageBody article .articleText h2{
     background-image: url("../images/bg-heading-h2.png");
     background-repeat: no-repeat;
@@ -120,7 +124,7 @@ h2{
 #page .pageBody article .articleText p{
     font-size: 16px;
 }
-.articleText{
+#page .pageBody .articleText{
     display: inline-block;
     font-size: 16px;
     line-height: 2.0;
@@ -520,8 +524,8 @@ h2{
     text-align: left;
 }
 
-/* 画像共通 */
-.imgAll{
+.imgMain{
     max-width:100%;
     height: auto;
+    margin:0 auto;
 }
