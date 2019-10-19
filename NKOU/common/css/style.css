@@ -1,0 +1,1223 @@
+
+body{
+    height: 500vh;
+    font-family: "AxisStd-Regular", sans-serif;
+}
+/* ページ全体 */
+
+
+h2{
+    font-size:20px;
+}
+
+#pageHead{
+    width:100%;
+
+}
+
+#page{
+    width:100%;
+
+}
+
+/* ページヘッダー（固定表示部） */
+#pageHead .menuOver{
+    z-index: 99999999;
+    background-color: rgb(242, 242, 242);
+    position: fixed;
+
+    width: 100%;
+    margin: 0 auto; 
+    background-color:rgba(242, 242, 242, 0.7)
+}
+
+
+
+#pageHead .menuOver .menuOverList{
+    margin: 7px auto;
+    padding: 5px 0;
+    width: 1040px;
+}
+
+#pageHead .menuOver .menuOverList li{
+    list-style: none;
+    float: left;
+}
+
+#pageHead .menuOver .menuOverList .blankList{
+    display: block;
+    width: 220px;
+}
+
+#pageHead .menuOver .menuOverList .callNumber{
+    padding: 0;
+}
+#pageHead .menuOver .menuOverList .callNumber img{
+    position: relative;
+    top: 7px;
+    left: -10px;
+    padding: 0;
+    margin: 0;
+}
+
+
+#pageHead .menuOver .menuOverList li:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#pageHead .menuOver .menuOverList .receptTime p{
+    font-size: 12px;
+    color: darkgrey;
+    padding: 7px 1px;
+    margin:0;
+}
+
+
+.menuBtn{
+    color: rgb(11, 11, 63);
+    border:solid 1px #333222;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background-image: url("../images/icon_arrow01_right_blue01.png");
+    background-size: 2.8%;
+    background-repeat: no-repeat;
+    background-position-y: 15px;
+    background-position-x: 155px;
+    margin: 0 4px;
+}
+
+
+
+.menuBtn:hover{
+    background-color: rgb(11, 11, 63);
+    color: #FFFFFF;
+    background-image: url("../images/icon_arrow01_right_white01.png");
+    background-size: 3%;
+}
+
+
+.menuBtn a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#pageHead .menuOver .menuOverList::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#pageHead .menuFirst{
+    overflow: hidden;
+    background-color: rgb(244, 244, 244);
+}
+
+#pageHead .menuFirst ul{
+    width:1100px;
+    margin: 0 auto;
+}
+
+#pageHead .menuFirst .titleMessage{
+    float: left;
+    font-size: 12px;
+}
+
+#pageHead .menuFirst ul li{ 
+    list-style: none;
+    float: right;
+    margin: 10px 0;
+    padding:0px 16px;
+    border-left: solid 1px #333333;
+    font-size: 12px;
+}
+
+#pageHead .menuFirst ul li:first-child{
+    margin: 0 50px 0 0;
+    padding: 10px;
+    border-left: none;
+    background-color:#d3d2d2;
+    background-image:url("../images/icon_site_mark01.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position-x:10px;
+    padding-left: 35px;
+}
+
+
+#pageHead .menuFirst ul li:first-child a{
+    color:rgb(11, 11, 63);
+}
+
+#pageHead .menuFirst ul li:last-child{
+    border-left: none;
+}
+
+
+#pageHead .menuFirst ul li a{
+    text-decoration: none;
+    color: #333333;
+}
+
+#pageHead .menuFirst ul li a:hover{
+    border-bottom: solid 1px #333333;
+}
+
+#pageHead .menuFirst ul li:nth-child(7){
+    border-left: none;
+}
+
+#pageHead .menuSecond {
+    margin: 20px 0 0 0;
+}
+
+#pageHead .menuSecond ul{
+    width: 1040px;
+    padding: 0;
+    margin: 0 auto;
+}
+#pageHead .menuSecond ul li{
+    list-style: none;
+    float: right;
+}
+
+#pageHead .menuSecond ul li:last-child{
+    float: left;
+    margin: auto;
+
+}
+
+#pageHead .menuSecond ul .telMenuSecond{
+    padding: 5px;
+    margin:auto 20px;
+}
+#pageHead .menuSecond ul .telMenuSecond p{
+    font-size: 11.5px;
+    color: #8d959c;
+    text-align: center;
+    padding:0;
+    margin-top:6px;
+}
+
+#pageHead .menuSecond ul .snsLogoMenuSecond{
+    margin:15px 0px 0px 8px;
+}
+
+
+#pageHead .menuSecond ul::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+#pageHead .menuGlobal ul{
+    width:1040px;
+    margin: 5px auto 17px auto;
+    padding: 0;
+}
+#pageHead .menuGlobal ul li{
+    list-style: none;
+    float: left;
+    margin: 0;
+}
+
+#pageHead .menuGlobal ul li:nth-child(5){
+    margin-right:8px;
+    
+}
+
+#pageHead .menuGlobal ul::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+#pageHead .menuGlobal ul .textMenuGlobal{
+    border-left:#d0d0d0 1px solid;     
+    text-align: center;
+    padding: 0;
+
+}
+
+#pageHead .menuGlobal ul .textMenuGlobal:nth-child(4){
+    border-right:#d0d0d0 1px solid;
+    margin-right: 50px;
+}
+
+
+#pageHead .menuGlobal ul .textMenuGlobal .jpText{
+    color: #333333;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    padding:0px 28px 0px 28px;
+    margin:0;
+}
+
+
+
+#pageHead .menuGlobal ul .textMenuGlobal .enText{
+    color: #a9a8a8;
+    font-size: 9px;
+    line-height: 1.4;
+    padding:0px 28px 0px 28px;
+    margin:0;
+    font-weight: bold;
+}
+
+
+
+
+#pageHead .menuGlobalDetail{
+    width: 100%;
+    background-color:rgb(11, 11, 63);
+    font-size: 14px;
+
+}
+
+#pageHead .menuGlobalDetail ul{
+    width:  1040px;
+    padding: 10px 0 5px 0;
+    margin: 0 auto;
+}
+#pageHead .menuGlobalDetail ul li{
+    list-style: none;
+    float: left;
+    padding: 5px 0 5px 5px;
+    margin: 5px 0 5px 0;
+    display: block;
+}
+
+#pageHead .menuGlobalDetail ul li:first-child{
+    padding-left:15px;
+}
+
+#pageHead .menuGlobalDetail ul li:nth-child(n+2):nth-child(-n+14){
+    padding-left: 7px;
+    padding-right: 2px;
+
+}
+#pageHead .menuGlobalDetail ul .break{
+    clear:both;
+}
+
+#pageHead .menuGlobalDetail ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 7px 6px;
+    letter-spacing: 0.1em;
+}
+
+#pageHead .menuGlobalDetail ul li a:hover{
+    background-color: #FFFFFF;
+    color: rgb(11, 11, 63);
+}
+
+#pageHead .menuGlobalDetail ul:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+#pageHead .menuGlobalDetail ul li img{
+    transform: scale(-1, 1);
+}
+
+#pageHead .imgAboutSchool{
+    position: relative;
+
+}
+
+#pageHead .imgAboutSchool .overTextAboutSchool{
+    position: absolute;
+    color: white;
+    top:50px;
+    left:500px;
+    text-align: center;
+}
+
+#pageHead .imgAboutSchool .overTextAboutSchool p{
+    font-size: 50px;
+    letter-spacing: 0.4em;
+    margin:20px 0 5px 0;
+}
+#pageHead .imgAboutSchool .overTextAboutSchool p:after{
+    content: "";
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 200px;
+    border-bottom: 1px solid #ffffff;
+}
+
+
+#pageHead .imgAboutSchool .overTextAboutSchool img{
+    padding: 30px 100px;
+    width:100px;
+}
+
+#pageHead .topicPathFrame{
+    width: 100%;
+    border-bottom:1px solid #aaaaaa;
+
+}
+
+#pageHead .topicPathFrame .topicPath{
+    width: 1040px;
+    margin:20px auto;
+    font-size: 14px;
+
+}
+
+#pageHead .topicPathFrame .topicPath a{
+    text-decoration: none;
+    color: rgb(47, 85, 155);
+}
+
+#pageHead .topicPathFrame .topicPath a:hover{
+    border-bottom: 1px solid rgb(47, 85, 155);
+}
+
+#page .mainMessage{
+    text-align:center;
+    width: 640px;
+    margin: 0 auto;
+}
+
+#page .mainMessage .messageFirst{
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom:100px;
+    letter-spacing: 0.1em;
+}
+
+#page .mainMessage .messageSecond{
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom:20px;
+
+}
+
+#page .mainMessage .messageSecond:after{
+    content:"";
+    width:200px;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px solid #666666;
+    margin-top: 10px;
+}
+#page .mainMessage .messageThird{
+    font-size:16px;
+    line-height: 28px;
+    text-align: left;
+}
+
+#page .educationPolicy{
+    width: 1040px;
+    margin:0 auto;
+}
+#page .educationPolicy .title{
+    font-size: 28px;
+    border-bottom:1px solid #777777;
+}
+#page .educationPolicy .title:after{
+    content: "";
+    display:block;
+    padding-bottom: 10px;
+    width:300px;
+    border-bottom: #000000 3px solid;
+}
+
+#page .educationPolicy .floatListFirst ul{
+    margin-left:0;
+    padding-left:0;
+}
+#page .educationPolicy .floatListFirst ul li{
+    list-style:none;
+    
+    float:left;
+    padding: 10px 10px 10px 0;
+    margin: 20px 10px 20px 0;
+}
+#page .educationPolicy .floatListFirst ul .label{
+    clear: both;
+    font-weight: bold;
+    font-size: 24px;
+    border-right:1px solid #777777;
+    padding: 10px 10px 10px 0;
+}
+
+#page .educationPolicy .floatListFirst ul .value{
+    font-size: 20px;
+}
+#page .educationPolicy .floatListFirst ul{
+    float:left;
+}
+
+#page .educationPolicy .floatListFirst ul:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+#page .educationPolicy .floatListFirst img{
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+#page .educationPolicy .floatListFirst img:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#page .educationPolicy .floatListFirst:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#page .educationPolicy .floatListSecond{
+    width: 700px;
+    height: 370px;
+
+    margin:50px auto;
+    color: inherit;
+}
+#page .educationPolicy .floatListSecond a{
+    display:block;
+    width: 600px;
+    height: 272px;
+    padding:30px;    
+    background-color: #f7f7f7;
+    color: inherit;
+    border: #d8d8d8 solid 1px;
+}
+
+#page .educationPolicy .floatListSecond .credoCard{
+    
+    float:left;
+}
+
+#page .educationPolicy .floatListSecond .nStandardsGroup{
+    width:410px;
+    float: right;
+
+}
+
+#page .educationPolicy .floatListSecond .nStandardsGroup .nStandardsTitle{
+    font-size: 22px;
+
+}
+
+#page .educationPolicy .floatListSecond .nStandardsGroup .nStandardsDescription{
+    line-height: 26px;
+    letter-spacing: 0.2em;
+}
+
+
+/* N高の魅力 */
+#page .educationPolicy .attractionList{
+    padding: 0;
+}
+
+#page .educationPolicy .attractionList li{
+    list-style: none;
+    float:left;
+    margin-top:20px;
+}
+
+#page .educationPolicy .attractionList .attractionHeading{
+    width: 470px;
+    margin-right: 40px;
+}
+#page .educationPolicy .attractionList .attractionHeading .summary{
+    font-size: 26px;
+    line-height: 40px;
+}
+
+#page .educationPolicy .attractionList .attractionHeading .detail{
+    font-size: 16px;
+    line-height: 26px;
+    width: 470px;
+    height: 100px;
+    border-top:1px solid #222222;
+    padding-top: 10px;
+
+}
+
+#page .educationPolicy .attractionList .attractionHeading .remarks{
+    font-size: 12px;
+    line-height: 20px;
+    margin-top:25px;
+}
+
+#page .educationPolicy .attractionList .attractionImage{
+    padding-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+#page .educationPolicy .attractionList:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*2nで指定しても */
+
+#page .attractionPart:nth-child(4){
+    width: 100%;
+    height: 1500px;
+    border-top:1px solid #dddddd;
+    background-color: #eeeeee;
+}       
+
+#page .attractionPart:nth-child(5){
+    width: 100%;
+    height: 4530px;
+    border-top:1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+#page .attractionPart:nth-child(6){
+    width: 100%;
+    height: 800px;
+    border-top:1px solid #dddddd;
+    background-color: #eeeeee;
+}
+
+#page .attractionPart:nth-child(7){
+    width: 100%;
+    height: 800px;
+    border-top:1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+#page .attractionPart:nth-child(8){
+    width: 100%;
+    height: 800px;
+    border-top:1px solid #dddddd;
+    background-color: #eeeeee;
+}
+
+#page .attractionPart:nth-child(9){
+    width: 100%;
+    height: 800px;
+    border-top:1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+#page .attractionPart:nth-child(10){
+    width: 100%;
+    height: 1400px;
+    border-top:1px solid #dddddd;
+    background-color: #eeeeee;
+}
+
+#page .attractionPart:nth-child(11){
+    width: 100%;
+    height: 800px;
+    border-top:1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+#page .attractionPart .attractionPartTop{
+    text-align: center;
+    margin-top: 80px;
+}
+
+#page .attractionPart .attractionPartTop h2{
+    font-size: 30px;
+    letter-spacing: 0.1em;
+}
+
+#page .attractionPart .attractionPartTop p{
+    line-height: 24px;
+}
+
+#page .attractionPart .attractionPartTop h2:after{
+    content:"";
+    width:200px;
+    display:block;
+    border-bottom: 1px solid #666666;
+    margin:20px auto;
+}
+
+#page .attractionPart .attractionContentList{
+    display:block;
+    padding: 0;
+    width:1040px;
+    margin: 60px auto 100px auto;
+}
+
+#page .attractionPart .attractionContentList li{
+    list-style: none;
+    float:left;
+    margin-right: 40px;
+}
+#page .attractionPart .attractionContentList li:nth-child(2n){
+    margin-right: 0;
+}
+#page .attractionPart .attractionContentList:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#page .attractionPart .attractionContentList .contentText{
+    display: block;
+    width: 270px;
+    text-align: left;    
+}
+#page .attractionPart .attractionContentList .contentText a{
+    display: block;
+    text-decoration: none;
+    color:inherit;
+}
+#page .attractionPart .attractionContentList .contentText a:hover{
+    opacity: 0.5;
+}
+#page .attractionPart .attractionContentList .contentText .programLabel{
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    height: 15px;
+    padding: 5px;
+    margin: 0;
+    background-color: #222222;
+}
+
+#page .attractionPart .attractionContentList .contentText .programHeading{
+    font-size: 22px;
+    line-height: 40px;
+    margin-top:0;
+}
+
+#page .attractionPart .attractionContentList .contentText .programDetail{
+    font-size: 14px;
+    line-height: 24px;
+    
+}
+#page .attractionPart .attractionContentList .contentText .programRemark{
+    font-size: 10px;
+    line-height: 16px;
+    margin-bottom: 50px;
+}
+
+#page .attractionPart .attractionContentList .contentImage{
+    width: 720px;
+}
+
+#page .messagesAdmissionInfomation{
+    display: block;
+    height: 420px;
+    background-color: #f7f7f7;
+}
+
+#page .messagesAdmissionInfomation table{
+    margin: auto;
+    padding: 50px;
+    border-spacing: 50px 30px;
+}
+
+#page .messagesAdmissionInfomation table tr td{
+    width: 480px;
+
+    padding: 5px;
+    
+    background-image: url("../images/icon_arrow01_right_black01.png");
+    background-repeat: no-repeat;
+    background-position: 480px 50%;
+
+    background-image:url("../images/bg_diagonal01_black01.png");
+    background-repeat:repeat;   
+}
+
+#page .messagesAdmissionInfomation table tr td:nth-of-type(1){
+    height:140px;
+}
+#page .messagesAdmissionInfomation table tr td:nth-of-type(3){
+    height:100px;
+}
+
+#page .messagesAdmissionInfomation table tr td a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width:100%;
+    height: 100%;
+    padding: 10px 0;
+
+    background-color: #ffffff;
+    
+}
+
+#page .messagesAdmissionInfomation table tr td a:hover{
+    opacity: 0.5;
+}
+
+#page .messagesAdmissionInfomation table tr td a ul{
+    padding: 0 0 0 30px;
+    
+}
+
+#page .messagesAdmissionInfomation table tr td a ul li{
+    list-style: none;
+    display: block;
+    width: 95%;
+    margin:0;
+    padding: 0;
+
+}
+
+#page .messagesAdmissionInfomation table tr td a ul .messageMain{
+    font-size: 24px;
+}
+
+#page .messagesAdmissionInfomation table tr td a ul .messageSub{
+    font-size: 14px;
+}
+
+#page .videoSpace{
+    height: 420px;
+    width:1040px;
+    margin:70px auto 0 auto;
+}
+
+#page .videoSpace .videoText{
+    width: 343px;
+    text-align: center;
+    
+}
+
+#page .videoSpace .videoText p{
+    margin: 3px;
+    font-size: 14px;
+}
+
+#page .moreDetailNkou{
+    height: 250px;
+    background-image: url("../images/footer02_bg01.png");
+}
+
+#page .moreDetailNkou .listCentered{
+    width: 600px;
+    margin: 0 auto;
+}
+
+#page .moreDetailNkou p{
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 35px 0 0 0;
+}
+
+#page .moreDetailNkou  .listCentered ul{
+    width: 240px;
+    padding: 0;
+}
+
+#page .moreDetailNkou .listCentered ul li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+#page .moreDetailNkou .listCentered ul li a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+#page .moreDetailNkou .listCentered .listLeft{
+    float: left;
+}
+
+
+#page .moreDetailNkou .listCentered .listLeft .btn{
+    width: 240px;
+    height: 50px;
+    border: 1px solid #999999;
+    margin: 10px;
+    background-color: #FFFFFF;
+
+    background-image: url("../images/icon_arrow01_right_black01.png");
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: 220px;
+    position: relative;
+}
+
+#page .moreDetailNkou .listCentered .listLeft .btn:nth-child(1){
+/* list-styleが表示されない */
+    list-style-image: url("..images/icon_book01_black01.png");
+    list-style-position: inside;
+}
+
+#page .moreDetailNkou .listCentered .listLeft .btn:nth-child(2){
+    /* list-styleが表示されない */
+    list-style-image: url("..images/icon_balloon01_black01.png" );
+}
+
+#page .moreDetailNkou .listCentered .listLeft .btn img{
+    position: absolute; 
+    top:10px;
+    left: 20px;
+}
+
+#page .moreDetailNkou .listCentered .listLeft .btn a{ 
+    height: 100%;
+    width: 100%;
+ 
+    /* li(btn)内の文字をボックス内の中央に表示させる方法 */    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#page .moreDetailNkou .listCentered .listRight{
+    float: left;
+    margin:40px 0 0 30px;
+}
+
+
+#page .moreDetailNkou .listCentered .listRight .tell img{
+    width: 230px;
+}
+
+#page .moreDetailNkou .listCentered .listRight .tell p{
+    padding: 0;
+    font-size: 12px;
+}
+
+#page .moreDetailNkou .listCentered .listRight .btn2{
+    font-size: 14px;
+    color:#ffffff;
+    border:solid 1px #ffffff;
+    width: 200px;
+    text-align: center;
+    background-color:rgba(200,200,200,0);
+    background-image: url("../images/icon_arrow01_right_white01.png");
+    background-repeat: no-repeat;
+    background-position-y: 12px;
+    background-position-x: 180px;
+    margin: 0 10px;
+
+}
+
+
+#page .moreDetailNkou .listCentered .listRight .btn2 a{ 
+    padding: 10px;
+}
+
+#page .moreDetailNkou .listCentered .listRight .btn2 a:hover{
+    text-decoration: underline solid #FFFFFF;
+}
+
+#page .otherThanNkou{
+    width: 1040px;
+    height: 200px;
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+
+#page .otherThanNkou li{
+    list-style: none;
+}
+
+#page .otherThanNkou .otherThanListOuter{
+    width:1040px;
+    margin: 30px auto 0 auto;    
+    padding: 0;
+}
+
+
+#page .otherThanNkou .otherThanListOuter .otherThanListOuterLi{
+    width: 460px;
+    margin: 0;
+    padding:5px;
+    float:left;
+
+    background-image: url("../images/icon_arrow01_right_black01.png");
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    background-position-x: 440px;
+
+    background-image:url("../images/bg_diagonal01_black01.png");
+    background-repeat:repeat;
+    
+}
+
+#page .otherThanNkou .otherThanListOuter .otherThanListOuterLi a{
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+        /**/
+    background-color: #ffffff;
+}
+#page .otherThanNkou .otherThanListOuter .otherThanListOuterLi a:hover{
+    opacity:0.5;
+}
+
+
+#page .otherThanNkou .otherThanListOuter .otherThanListOuterLi:nth-child(1){
+    margin-right: 50px;
+}
+
+#page .otherThanNkou .otherThanListOuter .otherThanListOuterLi .otherThanListInner{
+    padding: 0;
+    
+}
+
+#page .otherThanNkou .otherThanListOuter .otherThanListOuterLi .otherThanListInner .otherThanListInnerLi{
+    font-size: 13px;
+    padding-top: 20px;
+ 
+    /* li内の文字をボックス内の中央に表示させる方法 */    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+
+#page .footerMenu{
+    background-color:#eeeeee;
+    height: 900px;
+    border-bottom: #999999;
+}
+
+#page .footerMenu .footerMenuList{
+    padding: 30px 0 0 0;
+    width: 1040px;
+    margin: 0 auto 0 auto;
+}
+
+#page .footerMenu .footerMenuList li{
+    height: 70px;
+    list-style: none;
+    color: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    float: left;
+}
+#page .footerMenu .footerMenuList li:last-child{
+    margin-left: 100px;
+}
+
+#page .footerMenu .footerMenuList li a{
+    text-decoration: none;
+    color: navy;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: solid 1px #666666;
+}
+
+#page .footerMenu .footerMenuList li:nth-child(6) a{
+    border-right: 0px;
+}
+
+#page .footerMenu .footerMenuList li:nth-child(7) a{
+    border-right: 0px;
+}
+
+#page .footerMenu .footerMenuList::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#page .footerMenu .footerListSpace{
+    width:1040px;
+    margin: 30px auto 0 auto;
+}
+
+#page .footerMenu .footerListSpace .footerList{
+    padding: 0;
+    width:180px;
+    float:left;
+    margin: 0 20px 0 0;
+}
+
+#page .footerMenu .footerListSpace .footerList .topMenu{
+    height: 35px;    
+}
+
+#page .footerMenu .footerListSpace .footerList .topMenu a{
+    margin-top:auto;
+}
+
+#page .footerMenu .footerListSpace li{
+    list-style: none;
+}
+
+#page .footerMenu .footerListSpace li a{
+    text-decoration: none;
+}
+
+#page .footerMenu .footerListSpace li a p{
+    margin: 0;
+    color: navy;    
+ 
+}
+
+#page .footerMenu .footerListSpace li a .furigana{
+    font-size: 10px;
+}
+
+#page .footerMenu .footerListSpace .footerList .normalMenu{
+    margin-top: 10px;
+}
+#page .footerMenu .footerListSpace .footerList .normalMenu a{
+    font-size: 14px;
+    color: inherit;
+}
+#page .footerMenu .footerListSpace .footerList .normalMenu_bottomBorder{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: #999999 solid 1px;
+}
+#page .footerMenu .footerListSpace .footerList .normalMenu_bottomBorder a{
+    font-size: 14px;
+    color: inherit;
+}
+
+#page .pageFooter{
+    background-color:#eeeeee;
+}
+#page .pageFooter .pageFooterCentered{
+    width:1040px;
+    margin: 0 auto 0 auto;
+    height: 70px;
+    border-top: #999999 solid 1px;
+    padding: 20px 0 10px 0;
+}
+
+#page .pageFooter ul{
+    width: 1040px;
+    padding: 0;
+    margin: 0;
+
+}
+
+#page .pageFooter ul li{
+    list-style:none;
+    float: left;
+    padding: 10px 0 10px 0;
+    width:120px;
+    margin-right:10px;
+}
+
+#page .pageFooter ul li:nth-last-child(-n+3){
+    float: right;
+}
+
+#page .pageFooter ul li:nth-child(4),#page .pageFooter ul li:nth-child(5){
+    width:140px;
+}
+
+#page .pageFooter ul li:nth-child(3){
+    width:160px;
+}
+
+#page .pageFooter ul li:nth-child(3),#page .pageFooter ul li:nth-child(4),#page .pageFooter ul li:nth-child(5){
+    background-image: url("../images/icon_arrow01_right_black01.png");
+    background-repeat: no-repeat;
+    background-position-y: 15px;
+    background-position-x: 120px;
+}
+
+#page .pageFooter ul li:nth-child(3){
+    background-position-x: 150px;
+}
+
+#page .pageFooter ul li:nth-child(4),#page .pageFooter ul li:nth-child(5){
+    border-right: #999999 1px solid;
+}
+
+#page .pageFooter ul li a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 12px;    
+}
+
+#page .pageFooter ul li:nth-child(-n+2) a{
+    font-size: 14px;    
+}
+
+#page .pageFooter ul li a img{
+    width: 20%;
+    margin-right: 5px;
+    float:left;
+}
+
+#page .pageFooter ul li a p{
+    padding:0;
+    margin:0;
+}
+
+#pageFoot{
+    height: 50px;
+    background-color: #000000;
+    margin-bottom:20px;
+}
+
+#pageFoot #footerCentered{
+    width:1040px;
+    height: 50px;
+    margin: 0 auto 0 auto;
+}
+
+#pageFoot #footerCentered ul{
+    width:1040px;
+    height:50px;
+    margin: 0;
+    padding: 0;
+}
+#pageFoot #footerCentered ul li{
+    list-style:none;
+    height: 50px;
+    width:300px;
+    font-size:11px;
+    color:#aaaaaa;
+    margin:0;
+    padding:0;
+
+    display: flex;
+    align-items: center;
+
+    float:left;
+ }
+
+ #pageFoot #footerCentered ul li a{
+    color:#aaaaaa;
+    text-decoration: none;
+    padding: 0;
+    margin:0;
+}
+
+ #pageFoot #footerCentered ul li a:hover{
+     text-decoration-line: underline;
+ }
+
+#pageFoot #footerCentered ul li:last-child{
+    float:right;
+}
+
+#page{
+    font-family: 'Noto Sans JP',sans-serif;
+    color: #222222;
+    display: block;
+    padding-top:60px;
+    width: 100%;
+}
