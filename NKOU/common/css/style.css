@@ -239,8 +239,8 @@ h2{
     border-left:#d0d0d0 1px solid;     
     text-align: center;
     padding: 0;
-
 }
+
 
 #pageHead .menuGlobal ul .textMenuGlobal:nth-child(4){
     border-right:#d0d0d0 1px solid;
@@ -267,74 +267,91 @@ h2{
     font-weight: bold;
 }
 
+#pageHead .menuGlobal ul .textMenuGlobal:first-child .jpText{
+    color:darkblue;
+}
+#pageHead .menuGlobal ul .textMenuGlobal:first-child .enText{
+    color:darkblue;
+}
+
+#pageHead .imgAboutSchool{
+    position: relative;
+}
 
 
 
-#pageHead .menuGlobalDetail{
+#pageHead .imgAboutSchool .menuGlobalDetail{
     width: 100%;
-    background-color:rgb(11, 11, 63);
+    background-color:#181836;
     font-size: 14px;
+    position: absolute;
+    top:0;
+    left:0;
 
 }
 
-#pageHead .menuGlobalDetail ul{
+#pageHead .imgAboutSchool .menuGlobalDetail ul{
     width:  1040px;
+    height: 70px;
     padding: 10px 0 5px 0;
     margin: 0 auto;
 }
-#pageHead .menuGlobalDetail ul li{
+#pageHead .imgAboutSchool .menuGlobalDetail ul li{
     list-style: none;
     float: left;
-    padding: 5px 0 5px 5px;
+    padding: 2px 0 5px 5px;
     margin: 5px 0 5px 0;
     display: block;
 }
-
-#pageHead .menuGlobalDetail ul li:first-child{
+#pageHead .imgAboutSchool .menuGlobalDetail ul li:first-child{
     padding-left:15px;
+    position: relative;
+}
+#pageHead .imgAboutSchool .menuGlobalDetail ul li:first-child .navTriangle{
+    position: absolute;
+    color: #181836;
+    top: -27px;
+    left: 50%
 }
 
-#pageHead .menuGlobalDetail ul li:nth-child(n+2):nth-child(-n+14){
+#pageHead .imgAboutSchool .menuGlobalDetail ul li:nth-child(n+2):nth-child(-n+14){
     padding-left: 7px;
     padding-right: 2px;
 
 }
-#pageHead .menuGlobalDetail ul .break{
+#pageHead .imgAboutSchool .menuGlobalDetail ul .break{
     clear:both;
 }
 
-#pageHead .menuGlobalDetail ul li a{
+#pageHead .imgAboutSchool .menuGlobalDetail ul li a{
     text-decoration: none;
     color: #FFFFFF;
-    padding: 7px 6px;
+    padding: 7px 7px;
     letter-spacing: 0.1em;
 }
 
-#pageHead .menuGlobalDetail ul li a:hover{
+#pageHead .imgAboutSchool .menuGlobalDetail ul li a:hover{
     background-color: #FFFFFF;
-    color: rgb(11, 11, 63);
+    color:#181836;
 }
 
-#pageHead .menuGlobalDetail ul:after{
+#pageHead .imgAboutSchool .menuGlobalDetail ul:after{
     content:"";
     display:block;
     clear:both;
 }
 
-#pageHead .menuGlobalDetail ul li img{
+#pageHead .imgAboutSchool .menuGlobalDetail ul li img{
     transform: scale(-1, 1);
+    padding: 0 1px;
 }
 
-#pageHead .imgAboutSchool{
-    position: relative;
-
-}
 
 #pageHead .imgAboutSchool .overTextAboutSchool{
-    position: absolute;
+    position: absolute; 
+    top:20%;
+    left:37%; 
     color: white;
-    top:50px;
-    left:500px;
     text-align: center;
 }
 
@@ -1297,4 +1314,66 @@ h2{
     display: block;
     padding-top:60px;
     width: 100%;
+}
+
+/*画像*/
+#imgNkouLogoHeaderOver{
+    width: 170px;
+    height: 36px;
+}
+
+#imgCallNumberHeaderOver{
+    width: 190px;
+    height: 23px;
+}
+
+#imgCallNumberHeaderSecond{
+    width: 210px;
+    height: 29px;
+}
+
+#imgNkouLogoHeaderSecond{
+    width: 210px;
+    height: 45px;
+}
+
+.imgMenuGlobalDetails{
+    width:10px;
+    height: 18px;
+}
+
+#imgSchool{
+    width: 100%;
+    height: auto;
+}
+
+.imgArrowRight{
+    width: 8px;
+    height: 10px;
+}
+
+.imgReadMore{
+    width: 70px;
+    height: 12px;
+}
+
+.imgArrowRightOnBtn{
+    width: 30px;
+}
+
+#imgLogoNChu{
+    width: 130px;
+    height: 35px;
+}
+
+#imgNepps{
+    width: 130px;
+    height: 35px;
+}
+
+/* video */
+.videoYoutube{
+    width: 343px;
+    height: 193px;
+    border: 0;
 }

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -7,9 +8,9 @@
     <link rel="stylesheet" href="common/css/normalize.css">
     <link rel="stylesheet" href="common/css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <script type="text/javascript" src="common/js/jquery-3.4.1.min.js"></script>
+    <script src="common/js/jquery-3.4.1.min.js"></script>
 
-    <script type="text/javascript">
+    <script>
         $(function () {
             var menuOver = $('.menuOver');
             menuOver.hide();
@@ -50,12 +51,12 @@
     <header id="pageHead">
         <div class="menuOver">
             <ul class="menuOverList">
-                <li><img src="common/images/header_mainlogo_pc01.png" alt="N高騰学校ロゴ" width="170" height="36"></li>
+                <li><img id="imgNkouLogoHeaderOver" src="common/images/header_mainlogo_pc01.png" alt="N高騰学校ロゴ"></li>
                 <li class="blankList">
                     <p></p>
                 </li>
-                <li class="callNumber"><img src="common/images/header_tel01.png" alt="電話番号：0120-0252-15" width="190"
-                        height="23"></li>
+                <li class="callNumber"><img id="imgCallNumberHeaderOver" src="common/images/header_tel01.png"
+                        alt="電話番号：0120-0252-15"></li>
 
                 <li class="receptTime">
                     <p>受付時間<br>平日9:30〜20:00</p>
@@ -86,10 +87,11 @@
                             alt="twitterロゴ"></a></li>
                 <li class="snsLogoMenuSecond"><a href=""><img src="common/images/header_social01_01.png"
                             alt="facebookロゴ"></a></li>
-                <li class="telMenuSecond"><img src="common/images/header_tel03.png" alt="電話番号" width="210" height="29">
+                <li class="telMenuSecond"><img id="imgCallNumberHeaderSecond" src="common/images/header_tel03.png"
+                        alt="電話番号">
                     <p>受付時間：平日9:30～20:00</p>
                 </li>
-                <li><img src="common/images/header_mainlogo_pc01.png" alt="N高等学校ロゴ" width="210" height="45"></li>
+                <li><img id="imgNkouLogoHeaderSecond" src="common/images/header_mainlogo_pc01.png" alt="N高等学校ロゴ"></li>
             </ul>
         </div>
         <div class="menuGlobal">
@@ -114,39 +116,46 @@
                 <li class="menuBtn"><a href="https://secure1.nnn.ed.jp/form/form.php">資料請求</a></li>
             </ul>
         </div>
-        <div class="menuGlobalDetail">
-            <ul>
-                <li><a href="">高卒資格取得について</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">Advanced Program</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">ITツール</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">イベント・学校行事</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">ネット部活</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">在校生の声</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">保護者の声</a></li>
-                <li class="break"><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">生徒の進路・活動実績</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">学校関係者・著名人からメッセージ</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">制服紹介</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">キャンパス</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">動画一覧</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">学費</a></li>
-                <li><img src="common/images/slash.png" alt="区切り" width="10" height="18"> </li>
-                <li><a href="">N STANDARDS</a></li>
-            </ul>
-        </div>
+
         <div class="imgAboutSchool">
-            <img src="common/images/about_mainimage01.jpg" alt="校舎の写真" width=100%>
+            <img id="imgSchool" src="common/images/about_mainimage01.jpg" alt="校舎の写真">
+            <div class="menuGlobalDetail">
+                <ul>
+                    <li><a href="">高卒資格取得について</a>
+                        <div class="navTriangle">▲</div>
+                    </li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り">
+                    </li>
+                    <li><a href="">Advanced Program</a></li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り">
+                    </li>
+                    <li><a href="">ITツール</a></li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り">
+                    </li>
+                    <li><a href="">イベント・学校行事</a></li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り">
+                    </li>
+                    <li><a href="">ネット部活</a></li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り"> </li>
+                    <li><a href="">在校生の声</a></li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り"> </li>
+                    <li><a href="">保護者の声</a></li>
+                    <li class="break"><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り"> </li>
+                    <li><a href="">生徒の進路・活動実績</a></li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り"> </li>
+                    <li><a href="">学校関係者・著名人からメッセージ</a></li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り"> </li>
+                    <li><a href="">制服紹介</a></li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り"> </li>
+                    <li><a href="">キャンパス</a></li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り"> </li>
+                    <li><a href="">動画一覧</a></li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り"> </li>
+                    <li><a href="">学費</a></li>
+                    <li><img class="imgMenuGlobalDetails" src="common/images/slash.png" alt="区切り"> </li>
+                    <li><a href="">N STANDARDS</a></li>
+                </ul>
+            </div>
             <div class="overTextAboutSchool">
                 <p>N高について</p>
                 <img src="common/images/about_maintitle_ruby01.png" alt="about school">
@@ -156,18 +165,18 @@
         </div>
         <div class="topicPathFrame">
             <p class="topicPath">
-                <a href="">N高等学校 ｜ 通信制高校(広域)・単位制</a> &gt N高について
+                <a href="">N高等学校 ｜ 通信制高校(広域)・単位制</a> &gt; N高について
             </p>
         </div>
     </header>
 
     <div id="page">
         <article class="mainMessage">
-            <p class="messageFirst">
+            <h1 class="messageFirst">
                 IT×グローバル社会を生き抜く<br>
                 “創造力”を身につけ、<br>
                 世界で活躍する人材を育成する。<br>
-            </p>
+            </h1>
             <p class="messageSecond">
                 創造力をもった人とは、自分なりの考えをもって<br>
                 主体的に行動できる人です。<br>
@@ -182,7 +191,7 @@
             </p>
         </article>
         <article class="educationPolicy">
-            <p class="title">教育方針</p>
+            <h2 class="title">教育方針</h2>
             <div class="floatListFirst">
                 <ul>
                     <li class="label">教　養</li>
@@ -197,7 +206,7 @@
                 <img src="common/images/about_img00_01.png" alt="創造力＝思考力×実践力×教養">
             </div>
 
-            <div class="floatListSecond" href="">
+            <div class="floatListSecond">
                 <a href="">
                     <img class="credoCard" src="common/images/credo_card.jpg" alt="クレドカード">
                     <div class="nStandardsGroup">
@@ -206,9 +215,8 @@
                             N高等学校では教育方針をより具体化したN STANDARDS - エヌ スタンダード- という行動規範を設けております。 生徒・教職員はN
                             STANDARDSに記載された12の項目を常に意識することを心がけます。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </div>
                 </a>
             </div>
@@ -216,7 +224,7 @@
         </article>
 
         <article class="educationPolicy">
-            <p class="title">N高の魅力</p>
+            <h2 class="title">N高の魅力</h2>
             <ul class="attractionList">
                 <li class="attractionHeading">
                     <p class="summary">ネットの高校だから<br>
@@ -248,11 +256,11 @@
 
 
         <article class="attractionPart">
-            <article class="attractionPartTop">
+            <div class="attractionPartTop">
                 <h2>高卒資格取得のためのBasic Program</h2>
                 <p>ネットと通信制高校の制度を活用して、<br>
                     一般的な全日制高校と比べ短い拘束時間で高校卒業資格を得ることが可能です。</p>
-            </article>
+            </div>
             <ul class="attractionContentList">
                 <li class="contentImage">
                     <img src="common/images/about_img03_01.jpg" alt="スマートフォンで授業を閲覧。勉強中。">
@@ -267,16 +275,15 @@
                             映像学習やレポートはネット上で行うので郵送の手間もなく、学習を進められます。映像授業は東京書籍(株)のインターネット講座を使用するため、安心して学ぶ事ができます。
                         </p>
                         <p class="programRemark">※N高等学校は学校教育法第1条に定められた高等学校です。全日制と同じ卒業資格を取得することができます。</p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
             </ul>
             <ul class="attractionContentList">
 
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programLabel">Basic Program</p>
                         <p class="programHeading">学校に通うのは<br>
                             年5日間程度※の<br>
@@ -285,9 +292,8 @@
                         <p class="programDetail">
                             スクリーングは沖縄伊計本校と全国のスクーリング会場から選べます。沖縄本校のスクーリングは大自然の中で充実した学びと、思い出を提供します。また各地域に設置された会場でもスクーリングが可能です。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
                 <li class="contentImage">
@@ -297,17 +303,17 @@
         </article>
 
         <article class="attractionPart">
-            <article class="attractionPartTop">
+            <div class="attractionPartTop">
                 <h2>プロフェッショナルによる将来へ繋がるAdvanced Program</h2>
                 <p>Advanced Program（アドバンスト プログラム）とは、<br>
                     任意で受講する選択式授業です。</p>
-            </article>
+            </div>
             <ul class="attractionContentList">
                 <li class="contentImage">
                     <img src="common/images/about_img04_01.jpg" alt="スマートフォン３台">
                 </li>
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programLabel">Advanced Program</p>
                         <p class="programHeading">N高生なら<br>
                             学校の授業とは別に<br>
@@ -317,16 +323,15 @@
                             ネットで行うアドバンスト
                             プログラムでは生放送と教材がセットになった専用アプリを使用。大学受験、プログラミング、文芸小説、外国語、イラストレーター、コミック等ではN予備校を使用して生放送とオリジナル教材で将来への学習ができます。授業等ではN予備校を使用して生放送とオリジナル教材で将来への学習ができます。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
             </ul>
             <ul class="attractionContentList">
 
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programLabel">Advanced Program</p>
                         <p class="programHeading">実力派予備校講師<br>
                             による合格するための<br>
@@ -334,9 +339,8 @@
                         <p class="programDetail">
                             有名予備校講師11名による生授業と講師による授業に紐づいた教材で大学合格を目指せます。アプリでは50冊分以上ボリュームを誇る参考書・問題集が利用できます。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
                 <li class="contentImage">
@@ -348,7 +352,7 @@
                     <img src="common/images/about_img04_03.jpg" alt="プログラミング中のPC画面">
                 </li>
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programLabel">Advanced Program</p>
                         <p class="programHeading">ドワンゴの<br>
                             トップエンジニアが<br>
@@ -357,16 +361,15 @@
                         <p class="programDetail">
                             IT業界の最前線で活躍するプログラマが教える、実践的なプログラミング。全てのカリキュラムを終えた時、即戦力のプログラマとして実力が身に付いている事を約束します。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
             </ul>
             <ul class="attractionContentList">
 
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programLabel">Advanced Program</p>
                         <p class="programHeading">小説、漫画、イラスト、<br>
                             ファッション、<br>
@@ -375,9 +378,8 @@
                         <p class="programDetail">
                             夢の職業を学ぶ。夢を見つける為に、様々な仕事に触れる。多くの専門的な職業のアドバンストプログラムを通して、自らの将来を描くことができます。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
                 <li class="contentImage">
@@ -389,7 +391,7 @@
                     <img src="common/images/about_img04_05.jpg" alt="牧場">
                 </li>
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programLabel">Advanced Program</p>
                         <p class="programHeading">日本各地の職業を<br>
                             リアルで体験。<br>
@@ -398,16 +400,15 @@
                         <p class="programDetail">
                             N高では多くの自治体や企業、団体と協力し、生徒が様々な地域で職業体験が出来る機会を作ります。多くの仕事に触れることで得た広い視野と価値観は一生の財産となります。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
             </ul>
             <ul class="attractionContentList">
 
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programLabel">Advanced Program</p>
                         <p class="programHeading">世界の最先端を学ぶ<br>
                             国際教育プログラム。</p>
@@ -415,9 +416,8 @@
                             海外大学　国際教育プログラム<br>
                             国際的な生徒育成を目的とするN高等学校では世界の提携校のプログラムに参加する生徒を毎年募集しています。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
                 <li class="contentImage">
@@ -429,7 +429,7 @@
                     <img src="common/images/about_img04_07.jpg" alt="勉強する学生">
                 </li>
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programLabel">Advanced Program</p>
                         <p class="programHeading">中学までの<br>
                             学習範囲を学び直す<br>
@@ -438,9 +438,8 @@
                             ネットで行うアドバンスト
                             プログラムでは生放送と教材がセットになった専用アプリを使用。大学受験、プログラミング、文芸小説、外国語、イラストレーター、コミック等ではN予備校を使用して生放送とオリジナル教材で将来への学習ができます。授業等ではN予備校を使用して生放送とオリジナル教材で将来への学習ができます。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
             </ul>
@@ -448,12 +447,12 @@
 
 
         <article class="attractionPart">
-            <article class="attractionPartTop">
+            <div class="attractionPartTop">
                 <h2>先端企業が使用するITツールを高校時代から利用</h2>
-            </article>
+            </div>
             <ul class="attractionContentList">
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programHeading">
                             slack、GitHub、<br>
                             G Suite for Education<br>
@@ -464,28 +463,27 @@
                         <p class="programDetail">
                             ネットの高校であるN高では現在、多くの企業で取り入れられているITツールを高校生の段階から利用します。社会へ出る前からIT社会への対応力を養うことができます。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
                 <li class="contentImage">
-                    <img src="common/images/about_img05_01 (1).jpg" alt="Github Gsuite GitHub">
+                    <img src="common/images/about_img05_011.jpg" alt="GithubGsuiteGitHub">
                 </li>
             </ul>
         </article>
 
 
         <article class="attractionPart">
-            <article class="attractionPartTop">
+            <div class="attractionPartTop">
                 <h2>学校行事はネットとリアルで</h2>
-            </article>
+            </div>
             <ul class="attractionContentList">
                 <li class="contentImage">
                     <img src="common/images/about_img06_01.jpg" alt="賑やかな祭">
                 </li>
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programHeading">
                             仲間と一緒に高校生活を楽<br>
                             しむための<br>
@@ -494,29 +492,27 @@
                         <p class="programDetail">
                             ニコニコ超会議での文化祭や遠足など、エンターテイメントのプロの現場を体感できます。仲間と出会い力を合わせて目標を達成する喜びや経験は貴重な財産となるはずです。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
             </ul>
         </article>
 
         <article class="attractionPart">
-            <article class="attractionPartTop">
+            <div class="attractionPartTop">
                 <h2>N高起業部</h2>
-            </article>
+            </div>
             <ul class="attractionContentList">
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programHeading">
                             高校生だから起業する。</p>
                         <p class="programDetail">
                             年間の法人の起業件数は約5万社。もはや、起業は選択肢のひとつ。N高は学生が起業家を目指すことで、イノベーティブな考え方を学び、日本や世界を支える人材を育成するため、起業部を立ち上げます。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
                 <li class="contentImage">
@@ -526,36 +522,35 @@
         </article>
 
         <article class="attractionPart">
-            <article class="attractionPartTop">
+            <div class="attractionPartTop">
                 <h2>全国の仲間とともに活動する部活動</h2>
-            </article>
+            </div>
             <ul class="attractionContentList">
                 <li class="contentImage">
                     <img src="common/images/about_img07_01.jpg" alt="PCを操作する二人">
                 </li>
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programHeading">
                             部活を通じて<br>
                             仲間と出会い成長する。</p>
                         <p class="programDetail">
                             N高ではネットの高校独自の部活動があります。囲碁、将棋、競技プログラミング、eスポーツなど。全国のN高生とともに切磋琢磨して成長することができます。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
             </ul>
         </article>
 
         <article class="attractionPart">
-            <article class="attractionPartTop">
+            <div class="attractionPartTop">
                 <h2>ネットの高校は2つの入学コースが選べます</h2>
-            </article>
+            </div>
             <ul class="attractionContentList">
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programHeading">
                             ネットの高校だから<br>
                             全国各地から<br>
@@ -564,22 +559,21 @@
                         <p class="programDetail">
                             今、社会が欲する多様性を持った人材を輩出することを目的とした教育プログラムを全国各地から学ぶことができます。高卒資格取得と、他では得られない学習を経験しましょう。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
                 <li class="contentImage">
-                    <img src="common/images/about_img08_01.jpg">
+                    <img src="common/images/about_img08_01.jpg" alt="pcとsmartphone">
                 </li>
             </ul>
 
             <ul class="attractionContentList">
                 <li class="contentImage">
-                    <img src="common/images/about_img08_02.jpg">
+                    <img src="common/images/about_img08_02.jpg" alt="談笑する四人">
                 </li>
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programHeading">
                             ネットの高校の<br>
                             強みを生かした<br>
@@ -589,23 +583,21 @@
                         <p class="programDetail">
                             N高の通学コースでは、IT・グローバル社会で活躍するために必要な、基礎知識、実践力、思考力を備え、新たな価値を生み出す“創造力”を身につけることができます。日本で唯一の超実践的カリキュラムが、世界を変える人材を育成します。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
-
             </ul>
         </article>
 
         <article class="attractionPart">
-            <article class="attractionPartTop">
+            <div class="attractionPartTop">
                 <h2>より目的に特化したN高との提携スクール</h2>
-            </article>
+            </div>
             <ul class="attractionContentList">
 
                 <li class="contentText">
-                    <a>
+                    <a href="">
                         <p class="programHeading">
                             将来を考え、<br>
                             夢や目標に一直線な<br>
@@ -615,13 +607,12 @@
                         <p class="programDetail">
                             プログラミング、ファッション、ゲーム、アニメ、パティシエ、美容、国際教養プログラムなど、夢や目標に突き進みたいN高生のための提携スクール。
                         </p>
-                        <img src="common/images/icon_arrow01_right_black01.png" width="8px" height="10px" alt="右矢印">
-                        <img src="common/images/text_read_more01_black01.png" alt="read more" width="70px"
-                            height="12px">
+                        <img class="imgArrowRight" src="common/images/icon_arrow01_right_black01.png" alt="右矢印">
+                        <img class="imgReadMore" src="common/images/text_read_more01_black01.png" alt="read more">
                     </a>
                 </li>
                 <li class="contentImage">
-                    <img src="common/images/about_img09_03.jpg">
+                    <img src="common/images/about_img09_03.jpg" alt="提携先のロゴ">
                 </li>
             </ul>
         </article>
@@ -671,7 +662,7 @@
         </div>
         <div class="videoSpace">
             <div class="videoText">
-                <iframe width="343" height="193" src="https://www.youtube.com/embed/xhOsnY-k8JM" frameborder="0"
+                <iframe class="videoYoutube" src="https://www.youtube.com/embed/xhOsnY-k8JM"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 <p>N高等学校校歌『代数Nの方程式』</p>
@@ -681,10 +672,10 @@
             <p>N高についてさらに詳細を知りたい方はこちら</p>
             <div class="listCentered">
                 <ul class="listLeft">
-                    <li class="btn"><img src="common/images/icon_book01_black01.png" width="30px" alt="右矢印"><a
-                            href="">資料請求(無料)</a></li>
-                    <li class="btn"><img src="common/images/icon_balloon01_black01.png" width="30px" alt="右矢印"><a
-                            href="">説明会・相談会</a></li>
+                    <li class="btn"><img class="imgArrowRightOnBtn" src="common/images/icon_book01_black01.png"
+                            alt="右矢印"><a href="">資料請求(無料)</a></li>
+                    <li class="btn"><img class="imgArrowRightOnBtn" src="common/images/icon_balloon01_black01.png"
+                            alt="右矢印"><a href="">説明会・相談会</a></li>
                 </ul>
                 <ul class="listRight">
                     <li class="tell"><a href=""><img src="common/images/footer02_tel01.png" alt="電話番号">
@@ -703,7 +694,7 @@
                     <a href="">
                         <ul class="otherThanListInner">
                             <li class="otherThanListInnerLi">
-                                <img src="common/images/footer05_Njr.png" width="130px" height="35px" alt="N中等部">
+                                <img id="imgLogoNChu" src="common/images/footer05_Njr.png" alt="N中等部">
                             </li>
                             <li class="otherThanListInnerLi">
                                 社会で求められる創造力を身につけるプログレッシブスクール
@@ -715,7 +706,7 @@
                     <a href="">
                         <ul class="otherThanListInner">
                             <li class="otherThanListInnerLi">
-                                <img src="common/images/footer05_nepps.png" width="130px" height="35px" alt="Nepps">
+                                <img id="imgNepps" src="common/images/footer05_nepps.png" alt="Nepps">
                             </li>
                             <li class="otherThanListInnerLi">
                                 小中学生を対象とした実践的なプログラミングスクール
@@ -875,6 +866,7 @@
                 </ul>
             </div>
         </footer>
+    </div>
 </body>
 
 </html>
