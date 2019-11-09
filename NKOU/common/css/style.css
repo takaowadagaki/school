@@ -347,30 +347,31 @@ h2{
 }
 
 
+
 #pageHead .imgAboutSchool .overTextAboutSchool{
     position: absolute; 
-    top:20%;
+    top:10%;
     left:37%; 
     color: white;
     text-align: center;
 }
 
-#pageHead .imgAboutSchool .overTextAboutSchool p{
+#pageHead .imgAboutSchool  .overTextAboutSchool p{
     font-size: 50px;
     letter-spacing: 0.4em;
-    margin:20px 0 5px 0;
+    margin:70px 0 5px 0;
 }
-#pageHead .imgAboutSchool .overTextAboutSchool p:after{
+#pageHead .imgAboutSchool  .overTextAboutSchool p:after{
     content: "";
     display: block;
-    margin: 10px auto 0 auto;
+    margin: 20px auto 0 auto;
     width: 200px;
     border-bottom: 1px solid #ffffff;
 }
 
 
 #pageHead .imgAboutSchool .overTextAboutSchool img{
-    padding: 30px 100px;
+    padding:20px 100px;
     width:100px;
 }
 
